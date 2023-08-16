@@ -4,14 +4,17 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "login-mobile": "url('./src/img/BGmobile.jpeg')",
-        "login-desktop": "url('./src/img/BGdescktop.webp')",
+        cardUM: "url('./src/img/cardUm.jpg')",
+        slade: "url('./src/img/slide-1-1.jpg')",
+        cardDois: "url('./src/img/product-bg-1.jpg')",
+        CardTreis: "url('./src/img/product-bg-1.jpg')",
       },
-      backgroundColor: {
-        trans: " rgba(231, 231, 231, 0.281);",
+      height: {
+        500: "500px",
+        203: "203px",
       },
       width: {
-        1000: "100%",
+        298: "358px",
       },
     },
   },
