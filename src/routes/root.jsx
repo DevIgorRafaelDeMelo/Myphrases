@@ -7,6 +7,11 @@ import {
 } from "react-icons/ai";
 
 export default function Root() {
+  const handleMauseDown = (props) => {
+    let child = props.target.children;
+    console.log(child.link.classList);
+  };
+
   return (
     <>
       <div>
@@ -88,7 +93,8 @@ export default function Root() {
             <div className="p-2 px-4 hover:text-sky-600">Shop</div>
           </div>
           <div className="flex justify-between mt-10 font-bold text-zinc-500 ">
-            <div className="p-2 px-4 hover:text-sky-600">Outlet / Wishlist</div>
+            <div className="p-2 px-4 hover:text-sky-600">Outlet </div>
+            <div className="p-2 px-4 hover:text-sky-600">Wishlist</div>
           </div>
         </div>
         <div className="bg-slade bg-cover h-500 my-10 text-white pt-40 px-96">
@@ -99,26 +105,81 @@ export default function Root() {
             Show Now
           </div>
         </div>
-        <div className=" flex justify-between px-80">
-          <div className="bg-cardUM bg-cover h-203 w-298 pt-14 ps-4">
-            <div className="text-zinc-600">AMAZING</div>
-            <div className="font-bold font-">LADIES BOOTS</div>
-            <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
-              SALE UP TO 20%
+        <div className="mt-10">
+          <div className=" flex justify-between px-80">
+            <div className="bg-cardone bg-cover h-203 w-298 pt-24 ps-4">
+              <div className="text-zinc-600">AMAZING</div>
+              <div className="font-bold font-">LADIES BOOTS</div>
+              <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
+                SALE UP TO 20%
+              </div>
+            </div>
+            <div className="bg-cardtwo bg-cover h-203 w-298 pt-24 ps-4">
+              <div className="text-zinc-600">COOL</div>
+              <div className="font-bold font-">MENS JACKETS</div>
+              <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
+                SALE UP TO 10%
+              </div>
+            </div>
+            <div className="bg-cardtree bg-cover h-203 w-298 pt-24 ps-4">
+              <div className="text-zinc-600">TRENDY</div>
+              <div className="font-bold font-">SCHOOL BAG</div>
+              <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
+                SALE UP TO 50%
+              </div>
             </div>
           </div>
-          <div className="bg-cardUM bg-cover h-203 w-298 pt-14 ps-4">
-            <div className="text-zinc-600">AMAZING</div>
-            <div className="font-bold font-">LADIES BOOTS</div>
-            <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
-              SALE UP TO 20%
+        </div>
+        <div className="text-3xl font-bold text-zinc-800 text-center mt-10">
+          Featured Products
+        </div>
+        <div className="mt-10 flex justify-between px-96">
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            onMouseOver={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
             </div>
           </div>
-          <div className="bg-cardUM bg-cover h-203 w-298 pt-14 ps-4">
-            <div className="text-zinc-600">AMAZING</div>
-            <div className="font-bold font-">LADIES BOOTS</div>
-            <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
-              SALE UP TO 20%
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            onMouseOver={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
+            </div>
+          </div>{" "}
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            onMouseOver={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
+            </div>
+          </div>{" "}
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            onMouseOver={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
             </div>
           </div>
         </div>
