@@ -4,12 +4,20 @@ import {
   AiFillFacebook,
   AiOutlineShoppingCart,
   AiOutlineSearch,
+  AiFillGift,
+  AiOutlineHeart,
 } from "react-icons/ai";
 
 export default function Root() {
   const handleMauseDown = (props) => {
-    let child = props.target.children;
-    console.log(child.link.classList);
+    const child = props.target.children.link;
+    var list = child.className;
+    const character = "hidden";
+    if (list.includes(character)) {
+      child.classList.remove("hidden");
+      return;
+    }
+    child.classList.add("hidden");
   };
 
   return (
@@ -97,7 +105,7 @@ export default function Root() {
             <div className="p-2 px-4 hover:text-sky-600">Wishlist</div>
           </div>
         </div>
-        <div className="bg-slade bg-cover h-500 my-10 text-white pt-40 px-96">
+        <div className="bg-slade bg-cover h-500 mb-10 text-white pt-40 px-96">
           <div className="text-2xl">Shop The Beast Prices</div>
           <div className="text-6xl font-bold">CLEARANCE</div>
           <div className="text-1xl mt-5">Up to 75% OFF Everything</div>
@@ -138,6 +146,7 @@ export default function Root() {
             id="shop"
             className="w-20 bg-black h-64 bg-shopone bg-cover "
             onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
           >
             <div
               id="link"
@@ -148,8 +157,9 @@ export default function Root() {
           </div>
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            className="w-20 bg-black h-64 bg-shoptwo bg-cover "
             onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
           >
             <div
               id="link"
@@ -160,8 +170,9 @@ export default function Root() {
           </div>{" "}
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            className="w-20 bg-black h-64 bg-shoptree bg-cover "
             onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
           >
             <div
               id="link"
@@ -172,26 +183,245 @@ export default function Root() {
           </div>{" "}
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            className="w-20 bg-black h-64 bg-shopfour bg-cover "
             onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
           >
             <div
               id="link"
               className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
             >
               QUICK VIEW
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 flex justify-between px-96">
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Long Hoddie
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $89,00
+              </span>{" "}
+              $59,00
+            </div>
+          </div>
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Leather Belt
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $29,00
+              </span>{" "}
+              $19,00
+            </div>
+          </div>
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Jack Sandals
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $89,00
+              </span>{" "}
+              $79,00
+            </div>
+          </div>
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Vintage Hat
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $89,00
+              </span>{" "}
+              $79,00
+            </div>
+          </div>
+        </div>
+        <div className="text-3xl font-bold text-zinc-800 text-center mt-10">
+          Best Selling Products
+        </div>
+        <div className="mt-10 flex justify-between px-96">
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopfive bg-cover "
+            onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
+            </div>
+          </div>
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopsix bg-cover "
+            onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
+            </div>
+          </div>{" "}
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopseven bg-cover "
+            onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
+            </div>
+          </div>{" "}
+          <div
+            id="shop"
+            className="w-20 bg-black h-64 bg-shopeight bg-cover "
+            onMouseOver={handleMauseDown}
+            onMouseOut={handleMauseDown}
+          >
+            <div
+              id="link"
+              className="bg-trans h-12 mt-52 text-center font-bold text-white pt-2 hidden"
+            >
+              QUICK VIEW
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 flex justify-between px-96">
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Timez Watch
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $189,00
+              </span>{" "}
+              $159,00
+            </div>
+          </div>
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Clauren Bag
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $229,00
+              </span>{" "}
+              $189,00
+            </div>
+          </div>
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              Classic sunglasses
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $189,00
+              </span>{" "}
+              $139,00
+            </div>
+          </div>
+          <div className="w-20 ">
+            <div className="text-xs font-bold text-zinc-600">CATEGOTY</div>
+            <div className="text-base text-3xl font-bold text-zinc-900">
+              High Heels Shoes
+            </div>
+            <div className="text-zinc-900  ">
+              <span className="text-base text-zinc-500  line-through">
+                $99,00
+              </span>{" "}
+              $79,00
+            </div>
+          </div>
+        </div>
+        <div className="text-3xl font-bold text-zinc-800 text-center mt-10">
+          Shop Categories
+        </div>
+        <div className="mt-10 flex justify-between px-96 text-center">
+          <div className="w-20 py-10 bg-zinc-800 ">
+            <div className="text-3xl text-slate-200 font-bold ">Women</div>
+            <div className="text-stone-500 text-sm">19 PRODUCTS</div>
+          </div>
+          <div className="w-20 py-10 bg-zinc-800 ">
+            <div className="text-3xl text-slate-200 font-bold ">KIds</div>
+            <div className="text-stone-500 text-sm">29 PRODUCTS</div>
+          </div>
+          <div className="w-20 py-10 bg-zinc-800 ">
+            <div className="text-3xl text-slate-200 font-bold ">Shoes</div>
+            <div className="text-stone-500 text-sm">19 PRODUCTS</div>
+          </div>
+          <div className="w-20 py-10 bg-zinc-800 ">
+            <div className="text-3xl text-slate-200 font-bold ">Woman</div>
+            <div className="text-stone-500 text-sm">47 PRODUCTS</div>
+          </div>
+        </div>
+        <div className="mt-10 px-96 flex justify-between ">
+          <div className="w-4/12 flex ">
+            <div className="pt-5">
+              <AiOutlineShoppingCart style={{ fontSize: "40px" }} />
+            </div>
+            <div className="text-stone-700 p-6 ">
+              <div className="text-xs">SUPER FAST, NEXT DAY DELIVERY</div>
+              <div className="text-2xl text-stone-900 font-extrabold pb-3">
+                Free Shipping $99+
+              </div>
+              <div>
+                Lorem ipsum dolor sit amet, sectetur adipiscing elit. Phasellus
+                blanmassa enim. Nullam id varius.
+              </div>
+            </div>
+          </div>
+          <div className="w-4/12 flex ">
+            <div className="pt-5">
+              <AiFillGift style={{ fontSize: "40px" }} />
+            </div>
+            <div className="text-stone-700 p-6 ">
+              <div className="text-xs">A BUNCH OF OPTIONS</div>
+              <div className="text-2xl text-stone-900 font-extrabold pb-3">
+                Send a Gift to a Friend
+              </div>
+              <div>
+                Lorem ipsum dolor sit amet, sectetur adipiscing elit. Phasellus
+                blanmassa enim. Nullam id varius.
+              </div>
+            </div>
+          </div>
+          <div className="w-4/12 flex ">
+            <div className="pt-5">
+              <AiOutlineHeart style={{ fontSize: "40px" }} />
+            </div>
+            <div className="text-stone-700 p-6 ">
+              <div className="text-xs"> 5 STAR RATING</div>
+              <div className="text-2xl text-stone-900 font-extrabold pb-3">
+                Loved By Buyers
+              </div>
+              <div>
+                Lorem ipsum dolor sit amet, sectetur adipiscing elit. Phasellus
+                blanmassa enim. Nullam id varius.
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-slade bg-cover h-500 mt-10 text-white pt-40 px-96">
-          <div className="text-2xl">Shop The Beast Prices</div>
-          <div className="text-6xl font-bold">CLEARANCE</div>
-          <div className="text-1xl mt-5">Up to 75% OFF Everything</div>
-          <div className="mt-5 text-2xl bg-sky-600 p-5 px-10 w-60 rounded-full text-center">
-            Show Now
-          </div>
-        </div>
+        <div className="bg-cover h-500 mt-10 text-white pt-40 px-96"></div>
       </div>
     </>
   );
