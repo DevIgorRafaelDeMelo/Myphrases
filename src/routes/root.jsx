@@ -7,16 +7,28 @@ import {
   AiFillGift,
   AiOutlineHeart,
 } from "react-icons/ai";
+import {
+  FaCcVisa,
+  FaCcMastercard,
+  FaCcPaypal,
+  FaCcApplePay,
+  FaCcAmazonPay,
+} from "react-icons/fa";
 
 export default function Root() {
   const handleMauseDown = (props) => {
+    // eslint-disable-next-line react/prop-types
     const child = props.target.children.link;
+    // eslint-disable-next-line react/prop-types
     var list = child.className;
     const character = "hidden";
+    // eslint-disable-next-line react/prop-types
     if (list.includes(character)) {
+      // eslint-disable-next-line react/prop-types
       child.classList.remove("hidden");
       return;
     }
+    // eslint-disable-next-line react/prop-types
     child.classList.add("hidden");
   };
 
@@ -71,7 +83,7 @@ export default function Root() {
             <input
               placeholder="Search..."
               type="text"
-              className="bg-stone-200 px-10 w-100 rounded-full h-14 "
+              className="bg-stone-200 px-10 w-298 text-black rounded-full h-14 "
             />
             <div className="p-3">
               <AiOutlineSearch
@@ -117,21 +129,21 @@ export default function Root() {
           <div className=" flex justify-between px-80">
             <div className="bg-cardone bg-cover h-203 w-298 pt-24 ps-4">
               <div className="text-zinc-600">AMAZING</div>
-              <div className="font-bold font-">LADIES BOOTS</div>
+              <div className="font-bold text-zinc-900">LADIES BOOTS</div>
               <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
                 SALE UP TO 20%
               </div>
             </div>
             <div className="bg-cardtwo bg-cover h-203 w-298 pt-24 ps-4">
               <div className="text-zinc-600">COOL</div>
-              <div className="font-bold font-">MENS JACKETS</div>
+              <div className="font-bold text-zinc-900">MENS JACKETS</div>
               <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
                 SALE UP TO 10%
               </div>
             </div>
             <div className="bg-cardtree bg-cover h-203 w-298 pt-24 ps-4">
               <div className="text-zinc-600">TRENDY</div>
-              <div className="font-bold font-">SCHOOL BAG</div>
+              <div className="font-bold text-zinc-900">SCHOOL BAG</div>
               <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
                 SALE UP TO 50%
               </div>
@@ -357,19 +369,19 @@ export default function Root() {
         </div>
         <div className="mt-10 flex justify-between px-96 text-center">
           <div className="w-20 py-10 bg-zinc-800 ">
-            <div className="text-3xl text-slate-200 font-bold ">Women</div>
+            <div className="text-3xl text-slate-100 font-bold ">Women</div>
             <div className="text-stone-500 text-sm">19 PRODUCTS</div>
           </div>
           <div className="w-20 py-10 bg-zinc-800 ">
-            <div className="text-3xl text-slate-200 font-bold ">KIds</div>
+            <div className="text-3xl text-slate-100 font-bold ">Kids</div>
             <div className="text-stone-500 text-sm">29 PRODUCTS</div>
           </div>
           <div className="w-20 py-10 bg-zinc-800 ">
-            <div className="text-3xl text-slate-200 font-bold ">Shoes</div>
+            <div className="text-3xl text-slate-100 font-bold ">Shoes</div>
             <div className="text-stone-500 text-sm">19 PRODUCTS</div>
           </div>
           <div className="w-20 py-10 bg-zinc-800 ">
-            <div className="text-3xl text-slate-200 font-bold ">Woman</div>
+            <div className="text-3xl text-slate-100 font-bold ">Woman</div>
             <div className="text-stone-500 text-sm">47 PRODUCTS</div>
           </div>
         </div>
@@ -420,8 +432,244 @@ export default function Root() {
             </div>
           </div>
         </div>
-
-        <div className="bg-cover h-500 mt-10 text-white pt-40 px-96"></div>
+        <div className="mt-10 flex justify-between px-96">
+          <div className="w-1/2 bg-Bannerone bg-cover h-458 text-black font-bold pt-20 ps-20">
+            <div className="">WEEKEND SALE</div>
+            <div className="text-3xl">LADIES DRESS</div>
+            <div className="text-3xl py-5">
+              <span className="text-zinc-400 line-through">$150</span>$100
+            </div>
+            <div className="p-4 bg-black w-40 text-white text-center rounded-full ">
+              SHOP NOW
+            </div>
+          </div>
+          <div className="w-1/2 flex">
+            <div className="w-1/2 bg-Bannertwo h-458 mx-5 bg-cover text-black font-bold pt-20 ps-10">
+              <div className="">MENS JACKETS</div>
+              <div className="text-3xl py-5">
+                <span className="text-zinc-400 line-through">$300</span>$225
+              </div>
+              <div className="p-4 bg-black w-40 text-white text-center rounded-full ">
+                SHOP
+              </div>
+            </div>
+            <div className="w-1/2 bg-Bannertree h-458 bg-cover text-black font-bold pt-20 ps-10">
+              <div className="">UNISEX CAPS</div>
+              <div className="text-3xl py-5">
+                <span className="text-zinc-400 line-through">$100</span>$75
+              </div>
+              <div className="p-4 bg-black w-40 text-white text-center rounded-full ">
+                SHOP
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 flex justify-between px-96">
+          <div className="text-black">
+            <div className="font-bold text-2xl">Featured Products</div>
+            <div className="flex mt-5 cursor-pointer">
+              <div className="bg-shopone bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Long Hoddie
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$69.00</span>{" "}
+                  $59.00
+                </div>
+              </div>
+            </div>
+            <div className="flex mt-5 cursor-pointer">
+              <div className="bg-shoptwo bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Leather Belt
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$29.00</span>{" "}
+                  $19.00
+                </div>
+              </div>
+            </div>
+            <div className="flex mt-5 cursor-pointer ">
+              <div className="bg-shoptree bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Jack Sandals
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$40.00</span>{" "}
+                  $30.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-black">
+            <div className="font-bold text-2xl">Best Selling Products</div>
+            <div className="flex mt-5 cursor-pointer">
+              <div className="bg-shopfour bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Vintage Hat
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$99.00</span>{" "}
+                  $79.00
+                </div>
+              </div>
+            </div>
+            <div className="flex mt-5 cursor-pointer">
+              <div className="bg-shopfive bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Timez Watch
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$199.00</span>{" "}
+                  $119.00
+                </div>
+              </div>
+            </div>
+            <div className="flex mt-5 cursor-pointer ">
+              <div className="bg-shopsix bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Clauren Bag
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$229.00</span>{" "}
+                  $280.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-black">
+            <div className="font-bold text-2xl">Latest Products</div>
+            <div className="flex mt-5 cursor-pointer">
+              <div className="bg-shopseven bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Classik Sunglasses
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$199.00</span>{" "}
+                  $99.00
+                </div>
+              </div>
+            </div>
+            <div className="flex mt-5 cursor-pointer">
+              <div className="bg-shopeight bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  High Heels Shoes
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$99.00</span>{" "}
+                  $79.00
+                </div>
+              </div>
+            </div>
+            <div className="flex mt-5 cursor-pointer ">
+              <div className="bg-shopnine bg-cover h-100 w-100 "></div>
+              <div className="p-2">
+                <div className="text-sm text-zinc-400">CATEGORY</div>
+                <div className="text-zinc-800 text-2xl font-bold mb-3">
+                  Dual Color Jacket
+                </div>
+                <div>
+                  <span className="text-zinc-400 line-through">$399.00</span>{" "}
+                  $299.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between mt-10 px-96 bg-zinc-800 p-10 text-">
+          <div className="w-1/2 flex text-gray-200">
+            <div className="font-bold text-2xl">Newsletter</div>
+            <div className="ps-10 text-gray-600">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidun.
+            </div>
+          </div>
+          <div className="w-1/2">
+            <input
+              placeholder="Digite seu E-mail "
+              className="mx-10 mt-3 text-black rounded w-full ps-4"
+            />
+            <div className="bg-sky-400 w-40 text-center font-bold text-white p-2 mt-2 rounded m-auto">
+              SUBSCRIBE
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between px-96 bg-zinc-900 p-20 ">
+          <div className="text-zinc-100">
+            <div className="font-bold mb-10">Get In Touch</div>
+            <div className="font-bold text-zinc-700">ADDRESS</div>
+            <div>1234 Street Name, City, State, USA</div>
+            <div className="font-bold text-zinc-700">PHONE</div>
+            <div>Toll Free (123) 456-7890</div>
+            <div className="font-bold text-zinc-700">EMAIL</div>
+            <div>mail@example.com</div>
+            <div className="font-bold text-zinc-700">WORKING DAYS/HOURS</div>
+            <div>Mon - Sun / 9:00AM - 8:00PM</div>
+          </div>
+          <div className="text-zinc-100">
+            <div className="font-bold mb-10 text-white">Useful Links</div>
+            <div className="hover:text-zinc-100 text-zinc-700">Contact Us</div>
+            <div className="hover:text-zinc-100 text-zinc-700">
+              Our Services
+            </div>
+            <div className="hover:text-zinc-100 text-zinc-700">
+              Payment Methods
+            </div>
+            <div className="hover:text-zinc-100 text-zinc-700">
+              Services Guide
+            </div>
+            <div className="hover:text-zinc-100 text-zinc-700">
+              Services Support
+            </div>
+            <div className="hover:text-zinc-100 text-zinc-700">Privacy</div>
+            <div className="hover:text-zinc-100 text-zinc-700">About </div>
+            <div className="hover:text-zinc-100 text-zinc-700">
+              Our Guarantee
+            </div>
+            <div className="hover:text-zinc-100 text-zinc-700">
+              Terms and Conditions
+            </div>
+            <div className="hover:text-zinc-100 text-zinc-700">FAQs</div>
+          </div>
+          <div className="text-zinc-100">
+            <div className="font-bold mb-10 text-white">Recent Posts</div>
+            <div className="text-white">This is The Post Title, Example</div>
+            <div className="text-zinc-600">April 22, 2020</div>
+            <div className="text-white">This is The Post Title, Example</div>
+            <div className="text-zinc-600">April 22, 2020</div>
+            <div className="text-white">This is The Post Title, Example</div>
+            <div className="text-zinc-600">April 22, 2020</div>
+            <div className="text-white">This is The Post Title, Example</div>
+            <div className="text-zinc-600">April 22, 2020</div>
+          </div>
+        </div>
+        <div className="h-px bg-zinc-800 "></div>
+        <div className="px-10 flex justify-between bg-zinc-900 text-white py-3 ">
+          <div>SeuShop Theme. © 2021. All Rights Reserved</div>
+          <div className="flex justify-between  w-2/12">
+            <FaCcVisa style={{ height: "30px", width: "30px" }} />
+            <FaCcMastercard style={{ height: "30px", width: "30px" }} />
+            <FaCcPaypal style={{ height: "30px", width: "30px" }} />
+            <FaCcApplePay style={{ height: "30px", width: "30px" }} />
+            <FaCcAmazonPay style={{ height: "30px", width: "30px" }} />
+          </div>
+        </div>
       </div>
     </>
   );

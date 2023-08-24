@@ -16,6 +16,10 @@ export default {
         shopsix: "url('./src/img/shop-six.jpg')",
         shopseven: "url('./src/img/shop-seven.jpg')",
         shopeight: "url('./src/img/shop-eight.jpg')",
+        shopnine: "url('./src/img/shop-nine.jpg')",
+        Bannerone: "url('./src/img/banner0one.jpg')",
+        Bannertwo: "url('./src/img/banner-two.jpg')",
+        Bannertree: "url('./src/img/banner-tree.jpg')",
       },
       backgroundColor: {
         trans: "rgba(0, 125, 251, 0.734);",
@@ -23,10 +27,14 @@ export default {
       height: {
         500: "500px",
         203: "253px",
+        458: "458px",
+        100: "100px",
       },
       width: {
         298: "358px",
         20: "24%",
+        100: "100px",
+        170: "170px",
       },
     },
   },
