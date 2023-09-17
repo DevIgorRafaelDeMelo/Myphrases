@@ -1,5 +1,55 @@
 .slade{
-    background-image: url("./src/img/slide-1-1.jpg");
+    background-image: url("./src/img/slide-1-1.png");
 
 }
 
+
+
+
+
+.cardone{
+    background-image: url('./src/img/card-one.jpg')
+}
+
+.slade{
+            background-image: url('./src/img/slide-1-1.jpg')
+        }
+.cardtwo{
+            background-image: url('./src/img/card-two.jpg')
+        }
+.cardtree{
+            background-image: url('./src/img/card-tree.jpg')
+        }
+.shopone{
+            background-image: url('./src/img/shop-one.jpg')
+        }
+.shoptwo{
+            background-image: url('./src/img/shop-two.jpg')
+        }
+.shoptree{
+            background-image: url('./src/img/shop-tree.jpg')
+        }
+.shopfour{
+            background-image: url('./src/img/shop-four.jpg')
+        }
+.shopfive{
+            background-image: url('./src/img/shop-five.jpg')
+        }
+.shopsix{
+            background-image: url('./src/img/shop-six.jpg')
+        }
+.shopseven{
+            background-image: url('./src/img/shop-eight.jpg')
+        }
+.shopnine{
+            background-image: url('./src/img/shop-nine.jpg')
+        }
+.Bannerone{
+            background-image: url('./src/img/banner0one.jpg')
+        }
+.Bannertwo{
+            background-image: url('./src/img/banner-two.jpg')
+        }
+.Bannertree{
+            background-image: url('./src/img/banner-tree.jpg')
+        }
