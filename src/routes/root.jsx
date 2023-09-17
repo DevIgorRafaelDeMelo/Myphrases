@@ -119,7 +119,7 @@ export default function Root() {
             <div className="p-2 px-4 hover:text-sky-600">Wishlist</div>
           </div>
         </div>
-        <div className="bg-slade bg-cover h-500 mb-10 text-white pt-40 px-96">
+        <div className="slade bg-cover h-500 mb-10 text-white pt-40 px-96">
           <div className="text-2xl">Shop The Beast Prices</div>
           <div className="text-6xl font-bold">CLEARANCE</div>
           <div className="text-1xl mt-5">Up to 75% OFF Everything</div>
