@@ -129,21 +129,21 @@ export default function Root() {
         </div>
         <div className="mt-10">
           <div className=" flex justify-between px-80">
-            <div className="bg-cardone bg-cover h-203 w-298 pt-24 ps-4">
+            <div className="cardone bg-cover h-203 w-298 pt-24 ps-4">
               <div className="text-zinc-600">AMAZING</div>
               <div className="font-bold text-zinc-900">LADIES BOOTS</div>
               <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
                 SALE UP TO 20%
               </div>
             </div>
-            <div className="bg-cardtwo bg-cover h-203 w-298 pt-24 ps-4">
+            <div className="cardtwo bg-cover h-203 w-298 pt-24 ps-4">
               <div className="text-zinc-600">COOL</div>
               <div className="font-bold text-zinc-900">MENS JACKETS</div>
               <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
                 SALE UP TO 10%
               </div>
             </div>
-            <div className="bg-cardtree bg-cover h-203 w-298 pt-24 ps-4">
+            <div className="cardtree bg-cover h-203 w-298 pt-24 ps-4">
               <div className="text-zinc-600">TRENDY</div>
               <div className="font-bold text-zinc-900">SCHOOL BAG</div>
               <div className=" bg-zinc-900 rounded-full w-52 mt-5 text-white text-bold text-center text-1xl py-2   ">
@@ -158,7 +158,7 @@ export default function Root() {
         <div className="mt-10 flex justify-between px-96">
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopone bg-cover "
+            className="w-20 bg-black h-64 shopone bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -171,7 +171,7 @@ export default function Root() {
           </div>
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shoptwo bg-cover "
+            className="w-20 bg-black h-64 shoptwo bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -184,7 +184,7 @@ export default function Root() {
           </div>{" "}
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shoptree bg-cover "
+            className="w-20 bg-black h-64 shoptree bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -197,7 +197,7 @@ export default function Root() {
           </div>{" "}
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopfour bg-cover "
+            className="w-20 bg-black h-64 shopfour bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -265,7 +265,7 @@ export default function Root() {
         <div className="mt-10 flex justify-between px-96">
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopfive bg-cover "
+            className="w-20 bg-black h-64 shopfive bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -278,7 +278,7 @@ export default function Root() {
           </div>
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopsix bg-cover "
+            className="w-20 bg-black h-64 shopsix bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -291,7 +291,7 @@ export default function Root() {
           </div>{" "}
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopseven bg-cover "
+            className="w-20 bg-black h-64 shopseven bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -304,7 +304,7 @@ export default function Root() {
           </div>{" "}
           <div
             id="shop"
-            className="w-20 bg-black h-64 bg-shopeight bg-cover "
+            className="w-20 bg-black h-64 shopeight bg-cover "
             onMouseOver={handleMauseDown}
             onMouseOut={handleMauseDown}
           >
@@ -435,7 +435,7 @@ export default function Root() {
           </div>
         </div>
         <div className="mt-10 flex justify-between px-96">
-          <div className="w-1/2 bg-Bannerone bg-cover h-458 text-black font-bold pt-20 ps-20">
+          <div className="w-1/2 Bannerone bg-cover h-458 text-black font-bold pt-20 ps-20">
             <div className="">WEEKEND SALE</div>
             <div className="text-3xl">LADIES DRESS</div>
             <div className="text-3xl py-5">
@@ -446,7 +446,7 @@ export default function Root() {
             </div>
           </div>
           <div className="w-1/2 flex">
-            <div className="w-1/2 bg-Bannertwo h-458 mx-5 bg-cover text-black font-bold pt-20 ps-10">
+            <div className="w-1/2 Bannertwo h-458 mx-5 bg-cover text-black font-bold pt-20 ps-10">
               <div className="">MENS JACKETS</div>
               <div className="text-3xl py-5">
                 <span className="text-zinc-400 line-through">$300</span>$225
@@ -455,7 +455,7 @@ export default function Root() {
                 SHOP
               </div>
             </div>
-            <div className="w-1/2 bg-Bannertree h-458 bg-cover text-black font-bold pt-20 ps-10">
+            <div className="w-1/2 Bannertree h-458 bg-cover text-black font-bold pt-20 ps-10">
               <div className="">UNISEX CAPS</div>
               <div className="text-3xl py-5">
                 <span className="text-zinc-400 line-through">$100</span>$75
@@ -470,7 +470,7 @@ export default function Root() {
           <div className="text-black">
             <div className="font-bold text-2xl">Featured Products</div>
             <div className="flex mt-5 cursor-pointer">
-              <div className="bg-shopone bg-cover h-100 w-100 "></div>
+              <div className="shopone bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -483,7 +483,7 @@ export default function Root() {
               </div>
             </div>
             <div className="flex mt-5 cursor-pointer">
-              <div className="bg-shoptwo bg-cover h-100 w-100 "></div>
+              <div className="shoptwo bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -496,7 +496,7 @@ export default function Root() {
               </div>
             </div>
             <div className="flex mt-5 cursor-pointer ">
-              <div className="bg-shoptree bg-cover h-100 w-100 "></div>
+              <div className="shoptree bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -512,7 +512,7 @@ export default function Root() {
           <div className="text-black">
             <div className="font-bold text-2xl">Best Selling Products</div>
             <div className="flex mt-5 cursor-pointer">
-              <div className="bg-shopfour bg-cover h-100 w-100 "></div>
+              <div className="shopfour bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -525,7 +525,7 @@ export default function Root() {
               </div>
             </div>
             <div className="flex mt-5 cursor-pointer">
-              <div className="bg-shopfive bg-cover h-100 w-100 "></div>
+              <div className="shopfive bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -538,7 +538,7 @@ export default function Root() {
               </div>
             </div>
             <div className="flex mt-5 cursor-pointer ">
-              <div className="bg-shopsix bg-cover h-100 w-100 "></div>
+              <div className="shopsix bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -554,7 +554,7 @@ export default function Root() {
           <div className="text-black">
             <div className="font-bold text-2xl">Latest Products</div>
             <div className="flex mt-5 cursor-pointer">
-              <div className="bg-shopseven bg-cover h-100 w-100 "></div>
+              <div className="shopseven bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -567,7 +567,7 @@ export default function Root() {
               </div>
             </div>
             <div className="flex mt-5 cursor-pointer">
-              <div className="bg-shopeight bg-cover h-100 w-100 "></div>
+              <div className="shopeight bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">
@@ -580,7 +580,7 @@ export default function Root() {
               </div>
             </div>
             <div className="flex mt-5 cursor-pointer ">
-              <div className="bg-shopnine bg-cover h-100 w-100 "></div>
+              <div className="shopnine bg-cover h-100 w-100 "></div>
               <div className="p-2">
                 <div className="text-sm text-zinc-400">CATEGORY</div>
                 <div className="text-zinc-800 text-2xl font-bold mb-3">

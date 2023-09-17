@@ -8,45 +8,48 @@
 
 
 .cardone{
-    background-image: url('./src/img/card-one.jpg')
+    background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/shop/product-bg-1.jpg')
 }
 
 .cardtwo{
-            background-image: url('./src/img/card-two.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/shop/product-bg-2.jpg')
         }
 .cardtree{
-            background-image: url('./src/img/card-tree.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/shop/product-bg-3.jpg')
         }
 .shopone{
-            background-image: url('./src/img/shop-one.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-1.jpg')
         }
 .shoptwo{
-            background-image: url('./src/img/shop-two.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-2.jpg')
         }
 .shoptree{
-            background-image: url('./src/img/shop-tree.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-3.jpg')
         }
 .shopfour{
-            background-image: url('./src/img/shop-four.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-4.jpg')
         }
 .shopfive{
-            background-image: url('./src/img/shop-five.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-5.jpg')
         }
 .shopsix{
-            background-image: url('./src/img/shop-six.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-6.jpg')
         }
 .shopseven{
-            background-image: url('./src/img/shop-eight.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-7.jpg')
         }
+.shopeight{
+    background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-8.jpg')
+}
 .shopnine{
-            background-image: url('./src/img/shop-nine.jpg')
+    background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/products/product-9.jpg');
         }
 .Bannerone{
-            background-image: url('./src/img/banner0one.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/shop/product-bg-4.jpg')
         }
 .Bannertwo{
-            background-image: url('./src/img/banner-two.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/shop/product-bg-5.jpg')
         }
 .Bannertree{
-            background-image: url('./src/img/banner-tree.jpg')
+            background-image: url('https://www.okler.net/previews/ezy/3.1.0/img/shop/product-bg-6.jpg')
         }
